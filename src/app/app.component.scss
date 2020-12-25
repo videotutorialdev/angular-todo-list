@@ -1,0 +1,105 @@
+div.custom-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem;
+    nav.navigation {
+        display: block;
+        ul.menu-navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li.nav-item {
+                float: left;
+                margin: 0;
+                padding: 0;
+                a.nav-link {
+                    padding: 0;
+                    margin-right: 2rem;
+                    color: #000000;
+                    font-weight: bold;
+                }
+                &.right {
+                    flex: 1;
+                    text-align: right;
+                    padding-right: 0.2rem;
+                    button {
+                        background: transparent;
+                        border: 1px solid #232323;
+                        width: 46px;
+                        box-shadow: 2px 2px 0px 1px #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    div.todo-list-wrapper {
+        div.todo-list-group {
+            display: block;
+            overflow: hidden;
+            margin: 0.5rem 0;
+            span.todo-list-date {
+                color: #8B8B8B;
+            }
+            div.todo-list-item {
+                display: flex;
+                justify-content: space-between;
+                margin: 0.5rem 0;
+                span.time {
+                    color: #565656;
+                    width: 100px;
+                }
+                div.item-content {
+                    flex: 1;
+                    h5.item-title {
+                        color: #000000;
+                        margin: 0;
+                    }
+                    ul.item-tag-list {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        li.tag-item {
+                            a.tag-link {
+                                color: #747474;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+                div.item-action {
+                    margin-right: 0.2rem;
+                    button {
+                        margin-left: 0.44rem;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    button.load-more {
+        border: 1px solid #000000;
+        box-shadow: 3px 3px 0px 0 #00FFD4;
+    }
+}
+
+.btn-success {
+    background-color: #00FFD4;
+    color: #000000;
+    border: #00FFD4;
+}
+
+.btn-warning {
+    background-color: #FFF700;
+    color: #000000;
+    border: #FFF700;
+}
+
+.btn-danger {
+    background-color: red;
+    border: red;
+}
